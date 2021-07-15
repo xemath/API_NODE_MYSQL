@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Node Crud Api</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <h2 class="text-center mt-5">API BASICA DE EMPLEADOS CRUD DE NODE Y MYSQL</h2>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-9 border mx-auto">
+                <h3>¿Como usar?</h3>
+                <p>Recomiendo usar un programa para testeo de APIs como PostMan</p>
+                <p><span class="fw-bold">Nota:</span>Todos los datos se envian y se obtienen en formato JSON</p>
+                <h4>Obtener todos los empleados</h4>
+                <p>Para obtener todos los empleados dirigirse a la direccion /api/v1/employee y efectuar una peticion GET. Ejemplo</p>
+                <img src="./images/getallemployess.PNG" class="img-fluid" alt="">
+                <h4>Obtener empleados por id</h4>
+                <p>Para obtener un empleado por id dirigirse a la direccion /api/v1/employee/"id" y efectuar una peticion GET. Ejemplo</p>
+                <img src="./images/getemployeebyid.PNG" alt="" class="img-fluid">
+                <h4>Crear nuevo empleado</h4>
+                <p>Para crear un nuevo empleado efectuar una peticion POST a la direccion api/v1/employee/ con los datos que se ve en la imagen:</p>
+                <img src="./images/createnewemployee.PNG" alt="" class="img-fluid">
+                <h4>Actualizar un empleado</h4>
+                <p>Para actualizar un empleado enviar una peticion PUT a la direccion api/v1/employee/"id" con el id del empleado a actualizar y la informacion vista en la siguiente imagen en formato JSON</p>
+                <img src="./images/updateemployee.PNG" alt="" class="img-fluid">
+                <h4>Borrar empleado</h4>
+                <p>Para borrar un empleado de la base de datos enviar una peticion DELETE a la direccion api/v1/employee/"id" con el id del empleado a borrar. Ejemplo</p>
+                <img src="./images/deleteemployee.PNG" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

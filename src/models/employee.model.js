@@ -74,6 +74,15 @@ Employee.deleteEmployee = (id, result)=>{
         else{
             result(null,res)
         }
-    })
+    }) 
+    /*conexion.query('UPDATE employees SET is_deleted=? WHERE id = ?', [1,id], (err,res)=>{
+        if(err){
+            console.log('Error while deleting the employee');
+            result(null, err);
+        }else{
+            console.log("Employee deleted successfully");
+            result(null, res);
+        }
+    })*/
 }
 module.exports = Employee;
