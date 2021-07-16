@@ -5,7 +5,8 @@ const app = express();
 //parse body data!
 //app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.urlencoded({extended:false}))
-app.use(express.json())
+app.use(express.json());
+PORT = process.env.PORT || 3000;
 //app.get('/', employeeController);
 //motor de vistas para main page
 app.set('view engine', 'ejs');
@@ -17,6 +18,6 @@ app.get('/', (req, res)=>{
     res.render('index');
 })
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('running');
 })
